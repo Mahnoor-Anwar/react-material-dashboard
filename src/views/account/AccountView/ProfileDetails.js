@@ -15,16 +15,16 @@ import {
 
 const states = [
   {
-    value: 'alabama',
-    label: 'Alabama'
+    value: 'Sindh',
+    label: 'Sindh'
   },
   {
-    value: 'new-york',
-    label: 'New York'
+    value: 'Punjab',
+    label: 'Punjab'
   },
   {
-    value: 'san-francisco',
-    label: 'San Francisco'
+    value: 'Peshawer',
+    label: 'Peshawer'
   }
 ];
 
@@ -76,8 +76,8 @@ const ProfileDetails = ({ className, ...rest }) => {
               <TextField
                 fullWidth
                 helperText="Please specify the first name"
-                label="First name"
-                name="firstName"
+                label="farmer id"
+                name="farmer id"
                 onChange={handleChange}
                 required
                 value={values.firstName}
@@ -91,8 +91,8 @@ const ProfileDetails = ({ className, ...rest }) => {
             >
               <TextField
                 fullWidth
-                label="Last name"
-                name="lastName"
+                label="title"
+                name="title"
                 onChange={handleChange}
                 required
                 value={values.lastName}

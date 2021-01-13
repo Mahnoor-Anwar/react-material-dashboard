@@ -15,11 +15,11 @@ import {
 } from '@material-ui/core';
 
 const user = {
-  avatar: '/static/images/avatars/avatar_6.png',
-  city: 'Los Angeles',
-  country: 'USA',
-  jobTitle: 'Senior Developer',
-  name: 'Katarina Smith',
+  avatar: ' ',
+  city: 'Karachi',
+  country: 'Pakstan',
+  jobTitle: 'Admin',
+  name: 'Admin Name',
   timezone: 'GTM-7'
 };
 

@@ -37,7 +37,7 @@ const Sales = ({ className, ...rest }) => {
         label: 'Last year'
       }
     ],
-    labels: ['1 Aug', '2 Aug', '3 Aug', '4 Aug', '5 Aug', '6 Aug']
+    labels: ['1 January', '2 Febuary', '3 March', '4 April', '5 May', '6 June']
   };
 
   const options = {

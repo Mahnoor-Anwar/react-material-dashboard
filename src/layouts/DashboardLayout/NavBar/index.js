@@ -25,9 +25,9 @@ import {
 import NavItem from './NavItem';
 
 const user = {
-  avatar: '/static/images/avatars/avatar_6.png',
-  jobTitle: 'Senior Developer',
-  name: 'Katarina Smith'
+  avatar: '',
+  jobTitle: 'Admin',
+  name: 'Admin-Name'
 };
 
 const items = [
@@ -37,10 +37,60 @@ const items = [
     title: 'Dashboard'
   },
   {
+    href: '/app/consultancy',
+    icon: UsersIcon,
+    title: 'consultancy'
+  },
+  {
+    href: '/app/cases',
+    icon: UsersIcon,
+    title: 'cases'
+  },
+  {
+    href: '/app/Crop',
+    icon: ShoppingBagIcon,
+    title: 'Crop'
+  },
+  
+  {
+    href: '/app/userAuthentication',
+    icon: UsersIcon,
+    title: 'userAuthentication'
+  },
+  
+  {
     href: '/app/customers',
     icon: UsersIcon,
     title: 'Customers'
   },
+  {
+    href: '/app/farm',
+    icon: UsersIcon,
+    title: 'farm'
+  },
+  {
+    href: '/app/farmers',
+    icon: UsersIcon,
+    title: 'farmers'
+  },
+ 
+  {
+    href: '/app/seller',
+    icon: UsersIcon,
+    title: 'seller'
+  },
+  {
+    href: '/app/buyer',
+    icon: UsersIcon,
+    title: 'buyer'
+  },
+  
+  {
+    href: '/app/Advisor',
+    icon: UsersIcon,
+    title: 'Advisor'
+  },
+  
   {
     href: '/app/products',
     icon: ShoppingBagIcon,
@@ -151,7 +201,7 @@ const NavBar = ({ onMobileClose, openMobile }) => {
         m={2}
         bgcolor="background.dark"
       >
-        <Typography
+        {/* <Typography
           align="center"
           gutterBottom
           variant="h4"
@@ -163,20 +213,20 @@ const NavBar = ({ onMobileClose, openMobile }) => {
           variant="body2"
         >
           Upgrade to PRO version and access 20 more screens
-        </Typography>
+        </Typography> */}
         <Box
           display="flex"
           justifyContent="center"
           mt={2}
         >
-          <Button
+          {/* <Button
             color="primary"
             component="a"
             href="https://react-material-kit.devias.io"
             variant="contained"
           >
             See PRO version
-          </Button>
+          </Button> */}
         </Box>
       </Box>
     </Box>

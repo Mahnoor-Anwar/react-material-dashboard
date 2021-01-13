@@ -41,7 +41,7 @@ const TrafficByDevice = ({ className, ...rest }) => {
         hoverBorderColor: colors.common.white
       }
     ],
-    labels: ['Desktop', 'Tablet', 'Mobile']
+    labels: ['Active Users', 'Inactive Users', 'pending Users']
   };
 
   const options = {
@@ -68,19 +68,19 @@ const TrafficByDevice = ({ className, ...rest }) => {
 
   const devices = [
     {
-      title: 'Desktop',
+      title: 'Active Users',
       value: 63,
       icon: LaptopMacIcon,
       color: colors.indigo[500]
     },
     {
-      title: 'Tablet',
+      title: 'Inactive Users',
       value: 15,
       icon: TabletIcon,
       color: colors.red[600]
     },
     {
-      title: 'Mobile',
+      title: 'Pending',
       value: 23,
       icon: PhoneIcon,
       color: colors.orange[600]

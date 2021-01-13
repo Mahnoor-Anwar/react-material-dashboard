@@ -2,6 +2,7 @@ import React from 'react';
 import { Link as RouterLink, useNavigate } from 'react-router-dom';
 import * as Yup from 'yup';
 import { Formik } from 'formik';
+import signInFunction from './signInFunction';
 import {
   Box,
   Button,
@@ -152,6 +153,7 @@ const LoginView = () => {
                   type="password"
                   value={values.password}
                   variant="outlined"
+                  id = "Password"
                 />
                 <Box my={2}>
                   <Button
@@ -161,6 +163,7 @@ const LoginView = () => {
                     size="large"
                     type="submit"
                     variant="contained"
+                    onClick = {<signInFunction/>}
                   >
                     Sign in now
                   </Button>

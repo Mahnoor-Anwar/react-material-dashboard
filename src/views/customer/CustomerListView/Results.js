@@ -94,19 +94,19 @@ const Results = ({ className, customers, ...rest }) => {
                   />
                 </TableCell>
                 <TableCell>
+                  UId
+                </TableCell>
+                <TableCell>
                   Name
                 </TableCell>
                 <TableCell>
-                  Email
+                  Product
                 </TableCell>
                 <TableCell>
-                  Location
+                  Status
                 </TableCell>
                 <TableCell>
-                  Phone
-                </TableCell>
-                <TableCell>
-                  Registration date
+                  Date
                 </TableCell>
               </TableRow>
             </TableHead>
@@ -129,31 +129,40 @@ const Results = ({ className, customers, ...rest }) => {
                       alignItems="center"
                       display="flex"
                     >
-                      <Avatar
+                      {/* <Avatar
                         className={classes.avatar}
                         src={customer.avatarUrl}
                       >
                         {getInitials(customer.name)}
-                      </Avatar>
+                      </Avatar> */}
                       <Typography
                         color="textPrimary"
                         variant="body1"
                       >
-                        {customer.name}
+                        {customer.uId}
                       </Typography>
                     </Box>
                   </TableCell>
                   <TableCell>
-                    {customer.email}
+                    {customer.Name}
+                  </TableCell>
+                  {/* <TableCell>
+                    {customer.products}
+                  </TableCell> */}
+                  <TableCell>
+                    {`${customer.Product.product1},${customer.Product.product2},${customer.Product.product3},${customer.Product.product4}`}
                   </TableCell>
                   <TableCell>
-                    {`${customer.address.city}, ${customer.address.state}, ${customer.address.country}`}
-                  </TableCell>
-                  <TableCell>
-                    {customer.phone}
+                    {customer.Status}
                   </TableCell>
                   <TableCell>
                     {moment(customer.createdAt).format('DD/MM/YYYY')}
+                  </TableCell>
+                  <TableCell>
+                    {customer.delete}
+                  </TableCell>
+                  <TableCell>
+                    {customer.update}
                   </TableCell>
                 </TableRow>
               ))}
